@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Formulário Contato--</title>
+<meta charset="utf-8" />
+<!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+    <script src="JavaScript1.js"></script>-->
+</head>
+<style type="text/css" media="all">
+h1{
+  text-align: center;
+}
+  
+</style>
+<body id="body">
+  <h1>Clica ai</h1>
+  <h1 id="clic" onclick="clicar()">0</h1>
+</body>
+  <script>
+  let clic = document.getElementById("clic")
+  let num = 0
+  function clicar(){
+    console.log(num)
+    num += 1
+    clic.innerHTML = num
+  }
+</script>
+</html>
